@@ -288,6 +288,22 @@ footer.foot {
   .card { padding: 16px; }
   .checklist li, .steps li { font-size: 16px; padding-top: 7px; padding-bottom: 7px; }
 }
+
+/* Brand: Bezpečný stát (indigo, dark indigo, red alarm, lavender, off-white) */
+.slide.bs { --bs-main:#363294; --bs-dark:#272966; --bs-slate:#3A3C5E; --bs-red:#D71E29; --bs-tint:#C9CBE8; --bs-bg:#FAF8FB; background: var(--bs-bg); color: var(--bs-dark); }
+.slide.bs h2 { color: var(--bs-dark); }
+.slide.bs .kicker { color: var(--bs-red); }
+.slide.bs .lead, .slide.bs .small { color: var(--bs-slate); }
+.slide.bs .bs-logo { font-family: "Source Sans 3", system-ui, sans-serif; font-weight: 700; letter-spacing: .04em; color: var(--bs-main); font-size: 18px; margin: 0 0 28px; }
+.slide.bs .bs-logo span { color: var(--bs-dark); }
+.slide.bs .bs-card { background: #fff; border: 1px solid var(--bs-tint); border-top: 4px solid var(--bs-main); }
+.slide.bs .bs-card h3 { color: var(--bs-main); }
+.slide.bs .bs-big { font-family: "Source Serif 4", Georgia, serif; font-weight: 700; font-size: clamp(64px, 14vw, 120px); color: var(--bs-red); line-height: 1; margin-top: 12px; }
+.slide.bs .bs-tag { display: inline-block; background: var(--bs-main); color: #fff; padding: 10px 16px; border-radius: 4px; font-weight: 600; font-size: 16px; margin-top: 8px; }
+.slide.bs .stat b { color: var(--bs-main); }
+.slide.bs .stat span { color: var(--bs-slate); }
+.slide.bs .bs-list li { border-bottom: 1px solid var(--bs-tint); color: var(--bs-dark); }
+.slide.bs .bs-list li::before { background: var(--bs-red); }
 </style>
 </head>
 <body>
@@ -464,37 +480,73 @@ footer.foot {
   <div class="placeholder"><strong>Upozornění pro diskusi:</strong> přepisy a záznamy obsahují citlivé údaje o klientech. Aplikace sama neuvádí, kde a jak dlouho se data ukládají, kdo k nim má přístup ani co s nimi dělají poskytovatelé. Před použitím s reálnými klienty to musí být vyřešeno.</div>
 </section>
 
-<section class="slide" id="s12a">
-  <p class="kicker">3 · Bezpečný stát</p>
+<section class="slide bs" id="s12a">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Bezpečný stát</p>
   <h2>Jedno tlačítko. Okamžitá pomoc.</h2>
   <p class="lead">Jedním stiskem přivoláte pomoc a během vteřin upozorníte všechny, kdo to potřebují vědět. Přes SMS, push notifikace i e-mail, na počítači, tabletu i v mobilu.</p>
+  <p class="bs-tag">Okamžitá krizová komunikace pro školy, úřady a organizace</p>
+</section>
+
+<section class="slide bs" id="s12b">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Funkce 1 z 3</p>
+  <h2>Tiché přivolání pomoci</h2>
+  <p class="lead">Diskrétně přivoláte pomoc jediným stiskem.</p>
+  <div class="bs-big">1 stisk</div>
+</section>
+
+<section class="slide bs" id="s12c">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Funkce 2 z 3</p>
+  <h2>Krizové a hromadné notifikace</h2>
+  <p class="lead">Okamžité upozornění všech zaměstnanců a týmů. Zpráva jde všemi důležitými kanály současně.</p>
   <div class="grid">
-    <div class="card blue"><h3>Tiché přivolání</h3><p>Diskrétně přivoláte pomoc jediným stiskem.</p></div>
-    <div class="card green"><h3>Krizové a hromadné notifikace</h3><p>Okamžité upozornění všech zaměstnanců a týmů.</p></div>
-    <div class="card yellow"><h3>Deeskalační tlačítko</h3><p>Rychlé zvládnutí napjaté a nebezpečné situace.</p></div>
+    <div class="card bs-card"><h3>SMS</h3><p>Informace dorazí všemi důležitými kanály.</p></div>
+    <div class="card bs-card"><h3>Push</h3><p>Okamžité upozornění v aplikaci.</p></div>
+    <div class="card bs-card"><h3>E-mail</h3><p>Upozornění i do e-mailové schránky.</p></div>
   </div>
 </section>
 
-<section class="slide" id="s12b">
-  <p class="kicker">Bezpečný stát · funkce</p>
-  <h2>Informace dorazí všemi kanály</h2>
+<section class="slide bs" id="s12d">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Funkce 3 z 3</p>
+  <h2>Deeskalační tlačítko</h2>
+  <p class="lead">Rychlé zvládnutí napjaté a nebezpečné situace.</p>
+</section>
+
+<section class="slide bs" id="s12e">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Také v nabídce</p>
+  <h2>Přesná evidence a přístup odkudkoli</h2>
   <div class="grid">
-    <div class="card blue"><h3>SMS • push • e-mail</h3><p>Zpráva jde všemi důležitými kanály současně.</p></div>
-    <div class="card green"><h3>Přesná evidence událostí</h3><p>Přehledná historie a reporty pro vedení.</p></div>
-    <div class="card yellow"><h3>Web i mobilní aplikace</h3><p>Dostupné odkudkoli a kdykoli, i jako rozšíření prohlížeče.</p></div>
+    <div class="card bs-card"><h3>Přesná evidence událostí</h3><p>Přehledná historie a reporty pro vedení.</p></div>
+    <div class="card bs-card"><h3>Web i mobilní aplikace</h3><p>Dostupné odkudkoli a kdykoli, i jako rozšíření prohlížeče.</p></div>
   </div>
 </section>
 
-<section class="slide" id="s12c">
-  <p class="kicker">Bezpečný stát · čísla a podmínky</p>
-  <h2>Zdarma pro školy a instituce</h2>
+<section class="slide bs" id="s12f">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Dosah</p>
+  <h2>Už chráníme lidi v celé republice</h2>
   <div class="stat-row">
     <div class="stat"><b>41</b><span>okresů České republiky</span></div>
-    <div class="stat"><b>60+</b><span>škol a institucí</span></div>
     <div class="stat"><b>16 000+</b><span>chráněných osob</span></div>
+    <div class="stat"><b>60+</b><span>škol a institucí</span></div>
   </div>
-  <p class="lead" style="margin-top:28px">Pro školy, města a obce, krajské úřady, veřejné instituce i firmy. Bez poplatků: registrace, nasazení i provoz. Spuštění zhruba do 20 minut.</p>
-  <p class="small">Aktuální údaje k 1. 11. 2026. Zdroj: bezpecnystat.cz, provozovatel EduCentre CZ s.r.o.</p>
+  <p class="small">Pro školy, města a obce, krajské úřady, veřejné instituce i firmy. Aktuální údaje k 1. 11. 2026, provozovatel EduCentre CZ s.r.o.</p>
+</section>
+
+<section class="slide bs" id="s12g">
+  <p class="bs-logo">BEZPEČNÝ<span> STÁT</span></p>
+  <p class="kicker">Podmínky</p>
+  <h2>Zdarma pro školy a instituce</h2>
+  <ul class="checklist bs-list">
+    <li>Bez poplatků: registrace, nasazení i provoz.</li>
+    <li>Spuštění zhruba do 20 minut.</li>
+    <li>Na počítači, tabletu i v mobilu.</li>
+  </ul>
+  <p class="bs-tag">bezpecnystat.cz</p>
 </section>
 
 <section class="slide" id="s12d">
@@ -576,7 +628,7 @@ footer.foot {
 
 <div class="nav" role="group" aria-label="Navigace">
   <button id="prev" type="button" aria-label="Předchozí snímek">←</button>
-  <span class="count" id="count">1 / 24</span>
+  <span class="count" id="count">1 / 28</span>
   <button id="next" type="button" aria-label="Další snímek">→</button>
 </div>
 
