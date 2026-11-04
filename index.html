@@ -80,7 +80,7 @@ p { margin: 0 0 1rem; }
 .shot { display: grid; gap: 22px; grid-template-columns: minmax(0, 1fr); align-items: center; margin-top: 1rem; }
 @media (min-width: 800px) { .shot { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
 figure { margin: 0; }
-figure img { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: 0 14px 36px rgba(0,0,0,.12); }
+figure img { max-height: 60vh; max-width: 100%; width: auto; margin: 0 auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); box-shadow: 0 14px 36px rgba(0,0,0,.12); }
 figcaption { color: var(--muted); font-size: .9rem; margin-top: .6rem; }
 
 .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.4rem; }
